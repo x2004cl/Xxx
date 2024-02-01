@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>响应式页头</title>
+        <title>border-style</title>
+        <style type="text/css">
+            .header{
+                background-color:#1da7b4;
+                width:100%;
+                word-spacing:40px;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            u2{
+                list-style: none;
+                border:1px;
+            }
+            .box {
+                height: 50px;
+                margin: 0 auto;
+                line-height: 50px;
+                width:150px; 
+            }
+            .box .item {
+                position:relative;
+                font-size: 20px;
+                text-align: center;
+                color: white;
+                border: 1px solid #1da7b4;
+                background-color:#1da7b4;
+                width:190px;
+            }
+            .item:hover {
+                background-color:#0a8590;
+            }
+            .item u2{
+                position:absolute;
+                display: none;
+                font-weight:200px;
+                font-size: 20px;
+                background-color:#0a8590;
+                color:white;
+                text-align:center;
+                line-height: 40px; 
+            }
+            .item:hover u2 {
+                display: block;
+                line-height: 40px; 
+                width:190px;
+                text-align: center;
+            }
+            .item li1:hover {
+                color: aquamarine;
+            }
+            .item li1 {
+                border: 1px solid #0a8590;
+                width:100px;
+            }
+            u2>li1 {
+			    text-align: center;
+			    display: inline-block;
+            }
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Libre Franklin",Helvetica,Arial,sans-serif!important;
+                font-weight: 200;
+                font-size: 30px;
+                line-height: 1.8;
+                padding-right: 0!important;
+                cursor: pointer;
+                /*padding-bottom: 100px;*/
+            }
+            u1, o1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+            li {
+                list-style: none;
+            }
+            a1{
+                color:blue;
+                text-decoration:aqua;
+            }
+            /*.content{
+                font-family:Arial;
+                text-align:left;
+                color:#D3D3D3;
+            }
+            .content:link, .content:visited{
+                color:white;
+                background-color:black;
+                text-decoration:none;
+            }
+            .content:hover{
+                color:white;
+            }*/
+            li2{
+                color:white;
+            }
+            table{
+                font-weight:100;
+                font-size: 15px;
+                text-align: center;
+                color:#D3D3D3;
+            }
+            .footer {
+                margin-top: -50px;
+                height: 90px;
+                background-color:grey;
+                z-index: 9999;
+                font-size:20px;
+                text-align: center;
+                color:#D3D3D3;
+            }
+            .footer1 {
+                height:180px;
+                background-color:black;
+                z-index: 9999;
+            }
+            h3{
+                color:white;
+            }
+            div2{
+                float:right;
+            }
+            /*.footer2{
+                position: absolute;
+                right:60px;
+                bottom:120px;
+            }
+            .footer3{
+                position:absolute;
+                left:250px;
+                top:30px;
+                color:red;
+                font-size:32px;
+            }*/
+            h5{
+                color:red;
+                font-size:32px;
+            }
+            h6{
+                color:white;
+                font-size:14px;
+            }
+            .footer4{
+                position:absolute;
+                bottom:5px;
+                left:200px;
+            }
+            html, body {
+                height: 100%;
+            }
+            .wrap {
+                min-height: 100%;
+            }
+
+            div3{
+                background:grey;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </style>
+        <title>图片</title>
+    </head>
+    <body>   
+           <img src="logo.jpg" text-align="left" width="260" height="190">
+           <div2>
+           <img src="https://omo-oss-image.thefastimg.com/portal-saas/new2022052315331566327/cms/image/ebd77c76-a67f-428c-ae08-4f672f582507.png" alt="电话" title="电话" la="la" needthumb="false" text-align="right">
+            <a href="#" target="_self" text-align="right">
+            #
+            </a>
+            </div2>
+
+                                <div class="header">
+                                    <u2 class="box">
+                                        <li1 class="item"><a href="网站首页.html" target="wo" >网站首页</a></li1>
+                                        <li1 class="item"><a href="公司简介.html" target="wo" >关于我们</a>
+                                            <u2>
+                                                <li1><a href="公司简介.html" target="wo">公司简介</a></li1>
+                                                <li1><a href="资质荣誉.html" target="wo">资质荣誉</a></li1>
+                                                <li1><a href="老总致辞.html" target="wo">老总致辞</a></li1>
+                                            </u2>
+                                        </li1>
+                                        <li1 class="item"><a href="公司新闻.html" target="wo">最新动态</a>
+                                            <u2>
+                                                <li1><a href="公司新闻.html" target="wo">公司新闻</a></li1>
+                                                <li1><a href="行业新闻.html" target="wo">行业新闻</a></li1>
+                                                <li1><a href="媒体动态.html" target="wo">媒体动态</a></li1>
+                                            </u2>
+                                        </li1>
+                                        <li1 class="item"><a href="器械类.html" target="wo">产品展示</a>
+                                            <u2>
+                                                <li1><a href="器械类.html" target="wo">器械类</a></li1>
+                                                <li1><a href="消毒类.html" target="wo">消毒类</a></li1>
+                                            </u2>
+                                        </li1>
+                                        <li1 class="item"><a href="营销网络.html" target="wo">营销网络</a></li1>
+                                        <li1 class="item"><a href="联系方式.html" target="wo">联系我们</a>
+                                            <u2>
+                                                <li1><a href="联系方式.html" target="wo">联系方式</a></li1>
+                                                <li1><a href="message.html" target="wo">在线留言</a></li1>
+                                            </u2>
+                                        </li1>
+                                    </u2>
+                                    </div>
+
+        <img src="医用循迹小车.jpg" width="100%" height="300">
+    <div class="center">
+        <div id="products">
+            <iframe src="网站首页.html" name="wo" style="width: 100%;padding-top: 10px; height:1100px; border:0;" scrolling="no" ></iframe>
+        </div>
+    </div>
+ 
+        <div class="footer1">
+        <style type="">
+            a:link {color:#D3D3D3}
+            a:visited {color:white}
+            a:hover {color:white}
+        </style>
+        <table width="100%">
+            <tr>
+                <td>24小时客服热线</td>
+                <td><h3><a href="公司简介.html" target="wo">关于我们</a></h3></td>
+                <td><h3><a href="公司新闻.html" target="wo">最新动态</a></h3></td>
+                <td><h3><a href="器械类.html" target="wo">产品展示</a></h3></td>
+                <td><h3><a href="联系方式.html" target="wo">联系我们</a></h3></td>
+            </tr>
+            <div class="content">
+            <tr>
+                <td></td>
+                <td><a href="公司简介.html" target="wo">公司简介</a></td>
+                <td><a href="公司新闻.html" target="wo">公司新闻</a></td>
+                <td><a href="器械类.html" target="wo">器械类</a></td>
+                <td><a href="联系方式.html" target="wo">联系方式</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="资质荣誉.html" target="wo">资质荣誉</a></td>
+                <td><a href="行业新闻.html" target="wo">行业新闻</a></td>
+                <td><a href="消毒类.html" target="wo">消毒类</a></td>
+                <td><a href="message.html" target="wo">在线留言</a></td>
+            </tr>
+            </div>
+            <tr>
+                <td>如果你有任何疑问，请直接联系我们</td>
+                <td><a href="老总致辞.html" target="wo">老总致辞</a></td>
+                <td><a href="媒体动态.html" target="wo">媒体动态</a></td>
+                <td></td>
+                <td></td>
+                <p></p>
+                <p></p>
+                <td><h6>qq招新二维码</h6></td>
+            </tr>
+        </table>
+        </div>
+        <div class="footer">
+            <h4>电话：19945159175 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：武汉纺织大学外经贸学院</h4>
+            <h4>&nbsp;&nbsp;版权所有&copy;#   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站建设：#</h4>
+        </div>
+    </body>
+</html>
